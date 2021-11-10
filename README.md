@@ -1,4 +1,4 @@
-# Bank-Loan-Default-Risk-Analysis
+# Bank Loan Default Risk Analysis
 With this case study, we aims to understand the strong driving factors behind <b>Loan Defaults</b>.
 
 A loan lending company can use this case study to ensure that the consumers capable of repaying the loan are not rejected, and certain adaptable actions can be taken on client to basis if they are identified to face in difficulty paying their installments in future.
