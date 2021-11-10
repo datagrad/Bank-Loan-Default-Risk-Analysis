@@ -46,12 +46,51 @@ This dilemma revolves around the likelihood that a customer would pay back the l
 
 
 # Approach:
+## Dataset Information and overall data information check
 We used two set of Datasets, 
 1. application_data.csv, containing all the information of the client at the time of application. The data is about whether a client has payment difficulties. This further includes Data related to applicant’s socio economic status.
 2. previous_application.csv contains information about the client’s previous loan data. It includes information that whether the previous application had been Approved, Cancelled, Refused or Unused offer.
 
+## Data Cleansing
+Next, we inititated the Data Cleansing process which included Null Value identification and strategic data modification, Data Type Conversion, and Outlier Treatment recommendation.
+After we were confident of the data we had in hand, we wanted to analyse few numerical data after Binning them in acceptable intervals.
+
+## Exploratory Data Analysis
+We initiated the EDA process with a sole study of application dataset. It included <b> Univariate Analysis</b> , <b> Bivariate Analysis</b> , <b> Correlation Heat Map</b> , <b> Identification of top 10 most Correlated Variables</b>.
+
+With this we targeted to identify the pattern and data of applications.
+
+Next, we wanted to do a <b> Comparative Study</b>  between the current and previous application dataset. We started with merging both the dataset, and then analysed the variations.
+
+Throughout the study, Defaulter collumn (variable) is used as target variable.
+
+# Insights
+![image](https://user-images.githubusercontent.com/73750698/141141851-1a53b254-aa7a-4274-9612-c978038adc49.png)
+The ratio of Non-Defaulters to Defaulters is very high, giving Imbalance ratio of = .0878, because of this we used log scale to plot the curve to better understand the variations.
 
 
+## Final Recommendations to Loan Lending Company
+### **Likely Defaulter**
+The Below listed Variables are potential identifier for a customer to be a **Likely Defaulter**
+* Credit Score low External Source score
+* Income: Range of 100000 to 200000
+* Marital Status: Married, Single with high value loan, followed by Widows
+* Education : Married , Highly educated with degrees, and high credit amount
+* Number of Children 0 to 3 , High number of family members
+* Occupation: Labourers , Sales Staff, Drivers , Managers, and Core Staff
+* Lifestyle : Living in Own House, Apartments , Staying with parents, or owning a car
+* Organization Small Businesses, Self employed, Small Traders, Persons in Medicine, Government, School applicants
 
-
-
+### **Likely Non-Defaulter** 
+The Below listed Variables are potential identifier for a customer to be a **Likely Non-Defaulter** 
+* People with Higher Ext_Source_Score , especially EXT_SOURCE_3 score above 0.4, and EXT_SOURCE_2 score above 0.5
+* People With Revolving Loans
+* People who started their process over weekends. Those who initiated on Sunday are least like to default, followed by those who initiated on Saturday and then Friday.
+* People with an income of 500000 and above, with their credit lying below 10000
+* Businessman and Student from Name Income Type
+* People who are accompanied by a group of people when came for taking a loan
+* People with Academic Degree
+* HR Staff, IT Staff, followed by Real state agents and private service staff
+* People who own their own car and real estate
+* People living in co operative or office apartment
+* People with Unused offer in Name Contract Category
