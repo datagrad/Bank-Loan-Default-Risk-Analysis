@@ -2,6 +2,8 @@
 
 <a href="https://datagrad.github.io/"><img src="https://img.shields.io/badge/My%20Data%20Science%20Projects-Click%20here%20to%20Check%20my%20other%20Projects-blue">
 
+  
+## Project Objective
 With this case study, we aims to understand the strong driving factors behind <b>Loan Defaults</b>.
 
 A loan lending company can use this case study to ensure that the consumers capable of repaying the loan are not rejected, and certain adaptable actions can be taken on client to basis if they are identified to face in difficulty paying their installments in future.
